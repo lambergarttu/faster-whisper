@@ -589,6 +589,14 @@ class WhisperModel:
         self.device = device
         # set the random seed to make sure consistency across runs
         ctranslate2.set_random_seed(42)
+        print(model_path)
+        print(self.device)
+        print(device_index)
+        print(compute_type)
+        print(cpu_threads)
+        print(num_workers)
+        print(files)
+        print(model_kwargs)
         self.model = ctranslate2.models.Whisper(
             model_path,
             device=self.device,
