@@ -85,9 +85,9 @@ def download_model(
     allow_patterns = [
         "config.json",
         "preprocessor_config.json",
-        "model.bin",
+        "model.safetensors",
         "tokenizer.json",
-        "vocabulary.*",
+        "vocab.*",
     ]
 
     kwargs = {
